@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        localStorage.setItem("name","Arkar Yan");
+        let name = localStorage.getItem("name");
+        console.log(name);
+        let student = {
+            name: "Arkar Yan",
+            age: 20,
+            course: "Web Development"
+        }
+        localStorage.setItem("aky",JSON.stringify(student));
+        let data = JSON.parse(localStorage.getItem("aky"));
+        console.log(data);
+    </script>
+</body>
+</html>
